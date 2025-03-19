@@ -143,61 +143,60 @@
     </main>
 
     
-	<div id="googleMap">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d118105.86469426347!2d91.7425824!3d22.3230897!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf4a9e8fc6db%3A0x8f1793fedda0721b!2sAmbrosia+Restaurant+Ltd!5e0!3m2!1sen!2sbd!4v1531577674250" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-		<!--<div class="gtco-container">
-			<h2 class="cursive-font text-center">Subscribe</h2>
-		</div>-->
-	</div>
+	<footer id="gtco-footer" role="contentinfo" style="background-image: url(images/img_bg_1.jpg)"
+			data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="gtco-container">
+				<div class="row row-pb-md">
 
-	<footer id="gtco-footer" role="contentinfo" style="background-image: url(images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="gtco-container">
-			<div class="row row-pb-md">
 
-				
 
-				
-				<div class="col-md-12 text-center">
-					<div class="gtco-widget">
-						<h3>Get In Touch</h3>
-						<ul class="gtco-quick-contact">
-							<li><a href="#"><i class="icon-phone"></i>+88-02-333313576</a></li>
-							<li><a href="#"><i class="icon-phone"></i>+88-02-333313460</a></li>
-							<li><a href="#"><i class="icon-mail2"></i>info@ambrosia.com.bd</a></li>
-							<li><a target="_blank" href="https://www.messenger.com/t/ambrosiabd.ctg"><i class="icon-chat"></i> Live Chat</a></li>
-						</ul>
+
+					<div class="col-md-12 text-center">
+						<div class="gtco-widget">
+							<h3>Get In Touch</h3>
+							<ul class="gtco-quick-contact">
+								<li><a href="#"><i class="icon-phone"></i>+88-02-333313576</a></li>
+								<li><a href="#"><i class="icon-phone"></i>+88-02-333313460</a></li>
+								<li><a href="#"><i class="icon-mail2"></i>info@ambrosia.com.bd</a></li>
+								<li><a target="_blank" href="https://www.messenger.com/t/ambrosiabd.ctg"><i
+											class="icon-chat"></i> Live Chat</a></li>
+							</ul>
+						</div>
+						<div class="gtco-widget">
+							<h3>Get Social</h3>
+							<ul class="gtco-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a target="_blank" href="https://www.facebook.com/ambrosiabd.ctg/"><i
+											class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a target="_blank"
+										href="https://plus.google.com/+AmbrosiaRestaurantLtdChittagong"><i
+											class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="gtco-widget">
-						<h3>Get Social</h3>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a target="_blank" href="https://www.facebook.com/ambrosiabd.ctg/"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a target="_blank" href="https://plus.google.com/+AmbrosiaRestaurantLtdChittagong"><i class="fa fa-google-plus"></i></a></li>
-						</ul>
+
+					<div class="col-md-12 text-center copyright">
+						<p><small class="block">&copy; 2018 All Rights Reserved.</small>
+							<small class="block">Designed by <a href="" target="_blank">NexGen Media</a></small>
+						</p>
 					</div>
+
 				</div>
 
-				<div class="col-md-12 text-center copyright">
-					<p><small class="block">&copy; 2018 All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="" target="_blank">NexGen Media</a></small></p>
-				</div>
+
 
 			</div>
-
-			
-
-		</div>
-	</footer>
-	<!-- </div> -->
+		</footer>
+		<!-- </div> -->
 
 	</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="{{ asset('js/jquery.min.js') }}"></script>
 	<!-- jQuery Easing -->
@@ -217,81 +216,81 @@
 	<!-- Magnific Popup -->
 	<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
 	<script src="{{ asset('js/magnific-popup-options.js') }}"></script>
-	
+
 	<script src="{{ asset('js/moment.min.js') }}"></script>
 	<script src="{{ asset('js/bootstrap-datetimepicker.min.js') }}"></script>
 
 	<!--<script type="text/javascript" src="slick/jquery-1.8.2.min.js"></script>-->
-	  <script type="text/javascript" src="{{ asset('slick/migrate.js') }}"></script>
-	  <script type="text/javascript" src="{{ asset('slick/slick.min.js') }}"></script>
-	  
+	<script type="text/javascript" src="{{ asset('slick/migrate.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('slick/slick.min.js') }}"></script>
+
 	<!-- Main -->
 	<script src="{{ asset('js/main.js') }}"></script>
-	
+
 	<script type="text/javascript">
-    $(document).ready(function(){
-     $('.popdishes').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-   autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-    });
-  </script>
-  
-<script type="text/javascript">
-    $(document).ready(function(){
-     $('.event').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-   autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-    });
-  </script>
+		$(document).ready(function () {
+			$('.popdishes').slick({
+				centerMode: true,
+				centerPadding: '60px',
+				slidesToShow: 3,
+				autoplay: true,
+				autoplaySpeed: 2000,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							arrows: false,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 3
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: false,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+		});
+	</script>
 
-	</body>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.event').slick({
+				centerMode: true,
+				centerPadding: '60px',
+				slidesToShow: 3,
+				autoplay: true,
+				autoplaySpeed: 2000,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							arrows: false,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 3
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: false,
+							centerMode: true,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+		});
+	</script>
+
+</body>
+
 </html>
-
