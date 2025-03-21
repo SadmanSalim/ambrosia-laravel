@@ -10,17 +10,20 @@
 
         <div class="row popdishes">
 
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <a href="{{asset('images/chinese/b.jpg')}}" class="fh5co-card-item image-popup">
-                    <figure>
-                        <div class="overlay"><i class="ti-plus"></i></div>
-                        <img src="{{asset('images/chinese/b.jpg')}}" alt="Image" class="img-responsive">
-                    </figure>
-                    <div class="fh5co-text">
-                        <h1 class="cursive-font">Chicken Ball</h1>
-                    </div>
-                </a>
-            </div>
+		@foreach($dishes as $dish)
+<div class="col-lg-4 col-md-4 col-sm-6">
+    <a href="{{ asset($dish->image) }}" class="fh5co-card-item image-popup">
+        <figure>
+            <div class="overlay"><i class="ti-plus"></i></div>
+            <img src="{{ asset($dish->image) }}" alt="Image" class="img-responsive">
+        </figure>
+        <div class="fh5co-text">
+            <h1 class="cursive-font">{{ $dish->name }}</h1>
+        </div>
+    </a>
+</div>
+@endforeach
+
 
 
 

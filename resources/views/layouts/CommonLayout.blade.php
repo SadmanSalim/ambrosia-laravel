@@ -83,7 +83,7 @@
 
 		<!-- <div class="page-inner"> -->
 
-		<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(images/img_bg_2.jpg)" data-stellar-background-ratio="0.5">
+		<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url({{$banners->image}})" data-stellar-background-ratio="0.5">
         <nav class="gtco-nav" role="navigation">
     <div class="gtco-container">
 
@@ -126,7 +126,7 @@
 					<div class="col-md-12 col-md-offset-0 text-left">
 						<div class="row row-mt-15em">
 							<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-								<h1 class="cursive-font">Have a great journey of food!</h1>
+								<h1 class="cursive-font">{{$banners->title}}</h1>
 							</div>
 
 						</div>
