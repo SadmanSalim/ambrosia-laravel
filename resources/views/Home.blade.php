@@ -57,7 +57,10 @@
 					</div>-->
             </div>
             <div class="col-lg-8 col-md-8 col-sm-8">
-                <iframe width="100%" height="360" src="https://www.youtube.com/embed/zv9IIiFpwfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
+                @foreach ($reviews as $review)
+				<iframe width="100%" height="360" src="{{$review->link}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				@endforeach
+				<br /><br />
                 <!--<div class="fh5co-card-item">
 						<a href="images/banner.jpg" class="fh5co-card-item image-popup">
 						<figure>

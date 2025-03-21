@@ -6,6 +6,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DishController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,4 +35,7 @@ Route::middleware([
     Route::post('/update-dish/{id}', [DishController::class, 'UpdateDish'])->name('UpdateDish');
     Route::get('/banner', [BannerController::class, 'banner'])->name('banner');
     Route::post('/update-banner/{id}', [BannerController::class, 'UpdateBanner'])->name('updatebanner');
+    Route::get('/review', [ReviewController::class, 'Review'])->name('review');
+    Route::post('/store-review', [ReviewController::class, 'StoreReview'])->name('storeReview');
+    Route::get('/delete-review/{id}', [ReviewController::class, 'ReviewDelete'])->name('deleteReview');
 });
