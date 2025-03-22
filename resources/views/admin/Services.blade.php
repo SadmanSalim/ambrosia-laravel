@@ -50,7 +50,7 @@
                                 <td>{{ ++$index }}</td>
                                 <td>{{ $service_detail->service }}</td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                    <a href="{{ route('serviceDelete', $service_detail->id) }}" class="btn btn-danger btn-sm">Delete</a>
                                 </td>
                             </tr>
                         @endforeach

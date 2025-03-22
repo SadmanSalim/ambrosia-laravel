@@ -42,4 +42,5 @@ Route::middleware([
     Route::get('/service', [ServiceController::class, 'Services'])->name('admin.services');
     Route::post('/update-service/{id}', [ServiceController::class, 'UpdateService'])->name('UpdateService');
     Route::post('/store-service-details', [ServiceController::class, 'StoreServiceDetails'])->name('serviceDetails');
+    Route::get('/service-details-delete/{id}', [ServiceController::class, 'ServiceDelete'])->name('serviceDelete');
 });

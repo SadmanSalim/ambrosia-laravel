@@ -33,4 +33,9 @@ class ServiceController extends Controller
 
         return back()->with('msg', 'Service Added Successfully');
     }
+    function ServiceDelete($id){
+        $service = ServiceDetails::findOrFail($id);
+        $service->delete();
+        return Back()->with('msg', 'Service Deleted Succesfully');
+    }
 }
