@@ -7,6 +7,7 @@ use App\Http\Controllers\DishController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,4 +39,7 @@ Route::middleware([
     Route::get('/review', [ReviewController::class, 'Review'])->name('review');
     Route::post('/store-review', [ReviewController::class, 'StoreReview'])->name('storeReview');
     Route::get('/delete-review/{id}', [ReviewController::class, 'ReviewDelete'])->name('deleteReview');
+    Route::get('/service', [ServiceController::class, 'Services'])->name('admin.services');
+    Route::post('/update-service/{id}', [ServiceController::class, 'UpdateService'])->name('UpdateService');
+    Route::post('/store-service-details', [ServiceController::class, 'StoreServiceDetails'])->name('serviceDetails');
 });

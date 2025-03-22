@@ -134,6 +134,12 @@
                             <span class="menu-title">Reviews</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('admin.services')}}">
+                            <i class="menu-icon mdi mdi-cog"></i>
+                            <span class="menu-title">Services</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
 

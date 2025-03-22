@@ -186,20 +186,11 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
                     <h2 class="cursive-font">Our Services</h2>
-                    <p>Ambrosia has excellent facilities for arranging different types of programmes for 500-700 people, meeting, and conference besides individual lunch/dinner arrangement. Our services and facilities include:</p>
+                    <p>{{ $service->service }}</p>
                     <ul type="disk" class="serv text-justify">
-                        <li style="color:#DBDBD9;">Three exclusive decorative dining halls.</li>
-                        <li style="color:#DBDBD9;">Luxury room with 10-12 person capacity.</li>
-                        <li style="color:#DBDBD9;">Exclusive karaoke room with fine facilites.</li>
-                        <li style="color:#DBDBD9;">Providing audio visual equipement including TV, OHP.</li>
-                        <li style="color:#DBDBD9;">500 person sitting lunch/diner and buffet service</li>
-                        <li style="color:#DBDBD9;">700 person standing lunch dinner</li>
-                        <li style="color:#DBDBD9;">150 and 50 person capacity with individual hall for meeting, conference.</li>
-                        <li style="color:#DBDBD9;">And all kind of party with all facilities.</li>
-                        <li style="color:#DBDBD9;">Individual parking area with security.</li>
-                        <li style="color:#DBDBD9;">All kind of outside catering.</li>
-                        <li style="color:#DBDBD9;">Take away lunch box.</li>
-                        <li style="color:#DBDBD9;">Kids entertainment.</li>
+						@foreach ($service_details as $service_detail)
+						<li style="color:#DBDBD9;">{{ $service_detail->service }}</li>
+						@endforeach
                     </ul>
                 </div>
             </div>
